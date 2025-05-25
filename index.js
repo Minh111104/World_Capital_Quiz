@@ -21,6 +21,15 @@ let quiz = [
   { country: "United States of America", capital: "New York" },
 ];
 
+db.query("SELECT * FROM capitals", (err, res) => {
+  if (err) {
+    console.error("Error executing query", err.stack);
+  } else {
+    quiz = res.rows;
+  }
+  db.end();
+});
+
 let totalCorrect = 0;
 
 // Middleware

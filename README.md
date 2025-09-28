@@ -1,4 +1,4 @@
-# Capital City Quiz
+# Capital City Quiz 🌍
 
 A web-based quiz game that tests your knowledge of world capitals. Built with Node.js, Express, EJS, and PostgreSQL.
 
